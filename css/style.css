@@ -431,7 +431,7 @@ template {
 
 .user__name {
   font-size: 14px;
-  line-height: 18;
+  line-height: 18px;
   color: #333333;
   margin-left: 18px;
 }
