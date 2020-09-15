@@ -2,5 +2,7 @@
 @import 'variables';
 // подключение базовых настроек
 @import 'settings';
+// Подключение normalize
+@import '_normalize';
 // стили для блока header
 @import 'blocks/header';
