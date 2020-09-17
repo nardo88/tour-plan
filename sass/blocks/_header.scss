@@ -61,9 +61,10 @@
         padding-right: 75px;
         outline: none;
 
-        &::placeholder{
+        &::placeholder, ::-moz-placeholder{
             color: $text-color;
         }
+        
     }
     &__button{
         position: absolute;
@@ -73,6 +74,7 @@
         right: 0;
         border: none;
         background: $primary;
+        cursor: pointer;
     }
 }
 

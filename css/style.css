@@ -19,6 +19,22 @@ img {
      object-fit: cover;
 }
 
+input[type="search"]::-webkit-input-placeholder {
+  color: #333333;
+}
+
+input[type="search"]:-ms-input-placeholder {
+  color: #333333;
+}
+
+input[type="search"]::-ms-input-placeholder {
+  color: #333333;
+}
+
+input[type="search"]::placeholder {
+  color: #333333;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -443,19 +459,7 @@ template {
   outline: none;
 }
 
-.search__input::-webkit-input-placeholder {
-  color: #333333;
-}
-
-.search__input:-ms-input-placeholder {
-  color: #333333;
-}
-
-.search__input::-ms-input-placeholder {
-  color: #333333;
-}
-
-.search__input::placeholder {
+.search__input::placeholder, .search__input ::-moz-placeholder {
   color: #333333;
 }
 
@@ -467,6 +471,7 @@ template {
   right: 0;
   border: none;
   background: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
