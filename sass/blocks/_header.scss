@@ -60,6 +60,10 @@
         padding-left: 23px;
         padding-right: 75px;
         outline: none;
+
+        &::placeholder{
+            color: $text-color;
+        }
     }
     &__button{
         position: absolute;
