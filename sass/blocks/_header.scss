@@ -60,11 +60,6 @@
         padding-left: 23px;
         padding-right: 75px;
         outline: none;
-
-        &::placeholder, ::-moz-placeholder{
-            color: $text-color;
-        }
-        
     }
     &__button{
         position: absolute;
