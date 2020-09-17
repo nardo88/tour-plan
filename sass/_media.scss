@@ -8,9 +8,14 @@
     .container{
         max-width: 700px;
     }
+    .logo{
+        width: 132px;
+    }
     .navbar{
         &-top{
             padding: 30px 0;
+
+            
         }
         &__search{
             margin: auto;
@@ -23,6 +28,8 @@
                 line-height: 15px;
             }
         }
+
+        
     }
 }
 @media (max-width: 768px){
@@ -30,5 +37,38 @@
         max-width: 576px;
         width: 92%;
     }
+    .navbar{
+        &-menu, &__search, &__user{
+            display: none;
+        }
+        
+        
+    }
+    .menu{
+        &-button{
+            display: flex;
+            width: 16px;
+            height: 11px;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            border: none;
+            outline: none;
+            background: $ligth;
+            cursor: pointer;
 
+            &__line{
+                width: 16px;
+                height: 1px;
+                background: $text-color;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 576px){
+    .logo{
+       width: 99px; 
+    }
 }
