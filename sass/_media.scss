@@ -19,7 +19,6 @@
         }
         &__search{
             margin: auto;
-            max-width: 340px;
         }
         &-menu{
             padding: 22px 0;
@@ -28,8 +27,13 @@
                 line-height: 15px;
             }
         }
+      
+    }
+    .search{
+        &__input{
+            width: 340px;
 
-        
+        }
     }
 }
 @media (max-width: 768px){
@@ -56,6 +60,7 @@
             outline: none;
             background: $ligth;
             cursor: pointer;
+            padding: 0;
 
             &__line{
                 width: 16px;

@@ -496,7 +496,6 @@ template {
   }
   .navbar__search {
     margin: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding: 22px 0;
@@ -504,6 +503,9 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 
@@ -535,6 +537,7 @@ template {
     outline: none;
     background: #fff;
     cursor: pointer;
+    padding: 0;
   }
   .menu-button__line {
     width: 16px;
