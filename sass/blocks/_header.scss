@@ -10,6 +10,30 @@
         margin-right: auto;
         margin-left: 108px;
     }
+    &-menu{
+        list-style-type: none;
+        margin: 0;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $ligth;
+
+        &__link{
+            color: inherit;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+                line-height: 18px;
+        }
+    }
+
+    &-bottom{
+        background: $dark;
+    }
+}
+.logo{
+    width: 177px;
 }
 
 .search{
