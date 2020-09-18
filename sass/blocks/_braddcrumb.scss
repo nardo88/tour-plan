@@ -1,0 +1,33 @@
+.braddcrumb {
+    padding: 19px 0;
+}
+
+.braddcrumb-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+		// .braddcrumb-list__item
+
+		&__item {
+            font-size: 10px;
+            line-height: 13px;
+
+            &:not(:last-child){
+                &:after{
+                    content: '/';
+                    margin-right: 4px;
+                }
+            }
+
+		}
+
+		// .braddcrumb-list__link
+
+		&__link {
+            color: inherit;
+            text-decoration: none;
+            
+		}
+}

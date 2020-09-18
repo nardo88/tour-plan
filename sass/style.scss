@@ -3,8 +3,10 @@
 // подключение базовых настроек
 @import 'settings';
 // Подключение normalize
-@import '_normalize';
+@import 'normalize';
 // стили для блока header
 @import 'blocks/header';
+// блок braddcrumb
+@import 'blocks/braddcrumb';
 // медиазапросы
-@import 'media'
+@import 'media';

@@ -5,6 +5,7 @@
 body{
     font-family: 'Mulish', sans-serif;
     color: $text-color;
+    background: $background;
 }
 
 .container{
@@ -17,9 +18,5 @@ img{
     object-fit: cover;
 }
 
-// input[type="search"]::-moz-placeholder {color: $text-color;}
-// input[type="search"]::-webkit-input-placeholder { color: $text-color; }
-// input[type="search"]:-ms-input-placeholder { color: $text-color;}
-// input[type="search"]::-ms-input-placeholder { color: $text-color; }
 input[type="search"]::placeholder {color: $text-color;} 
   
