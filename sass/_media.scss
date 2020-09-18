@@ -70,6 +70,41 @@
         }
     }
 
+    //  запросы для блока HOTEL
+
+    .hotel-text {
+            width: 100%;
+
+            // .hotel-text__wrapper
+
+            &__wrapper {
+                justify-content: space-between;
+            }
+
+            // .hotel-text__title
+
+            &__title {
+                flex-basis: 100%;
+                margin-top: 10px;
+            }
+
+            // .hotel-text__offer
+
+            &__offer {
+                order: -1;
+                margin-left: 0;
+            }
+
+    }
+    .stars {
+        flex-basis: auto;
+        margin-top: 0;
+    }
+    .hotel-ratting {
+        display: none;
+    }
+
+
 }
 
 @media (max-width: 320px){
@@ -86,4 +121,54 @@
             padding: 25px 0;
         }
     }
+
+    //  стили для блока hotel
+    .hotel {
+
+        padding: 0;
+		// .hotel__wrapper
+
+		&__wrapper {
+		}
+}
+
+.hotel-text {
+
+		// .hotel-text__wrapper
+
+		&__wrapper {
+		}
+
+		// .hotel-text__title
+
+		&__title {
+            margin-top: 13px;
+		}
+
+		// .hotel-text__offer
+
+		&__offer {
+		}
+
+		// .hotel-text__description
+
+		&__description {
+		}
+}
+.stars {
+    margin-right: 17px;
+}
+.hotel-ratting {
+
+		// .hotel-ratting__caption
+
+		&__caption {
+		}
+
+		// .hotel-ratting__value
+
+		&__value {
+		}
+}
+
 }
