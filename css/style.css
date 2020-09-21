@@ -703,12 +703,12 @@ template {
 
 .slider-hotel__btn-prev {
   left: 18px;
-  background: url(../../images/arrow-prev.svg);
+  background-image: url(../images/arrow-prev.svg);
 }
 
 .slider-hotel__btn-next {
   right: 18px;
-  background: url(../../images/arrov-next.svg);
+  background-image: url(../images/arrov-next.svg);
 }
 
 .slider-hotel__btn {
