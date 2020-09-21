@@ -1,10 +1,11 @@
 .hotel {
-    padding: 10px 0 20px;
+    padding: 10px 0;
     // .hotel__wrapper
     &__wrapper {
         display: flex;
         align-items: center;
-        justify-content: space-between;        
+        justify-content: space-between;  
+        padding-bottom: 10px;      
     }
 
     &__slider{

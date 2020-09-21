@@ -541,7 +541,7 @@ template {
 }
 
 .hotel {
-  padding: 10px 0 20px;
+  padding: 10px 0;
 }
 
 .hotel__wrapper {
@@ -557,6 +557,7 @@ template {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 10px;
 }
 
 .hotel__slider {
