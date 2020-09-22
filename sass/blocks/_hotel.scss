@@ -187,7 +187,7 @@
     border-radius: 8px;
     width: 350px;
     min-height: 210px;
-    padding: 28px;
+    padding: 27px;
     color: $ligth;
 
 
@@ -225,6 +225,7 @@
     // .price__start
 
     &__start {
+        font-family: Nunito;
         font-size: 10px;
         line-height: 14px;
     }
@@ -232,6 +233,7 @@
     // .price__pricetag
 
     &__pricetag {
+        font-family: Nunito;
         font-weight: 800;
         font-size: 24px;
         line-height: 30px;
@@ -240,6 +242,8 @@
     // .price__per-room
 
     &__per-room {
+        font-family: Nunito;
+
         font-size: 12px;
         line-height: 16px;
     }

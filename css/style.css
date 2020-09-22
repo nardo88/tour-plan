@@ -765,7 +765,7 @@ template {
           border-radius: 8px;
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 27px;
   color: #fff;
 }
 
@@ -811,17 +811,20 @@ template {
 }
 
 .price__start {
+  font-family: Nunito;
   font-size: 10px;
   line-height: 14px;
 }
 
 .price__pricetag {
+  font-family: Nunito;
   font-weight: 800;
   font-size: 24px;
   line-height: 30px;
 }
 
 .price__per-room {
+  font-family: Nunito;
   font-size: 12px;
   line-height: 16px;
 }
