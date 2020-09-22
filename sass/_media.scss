@@ -130,45 +130,20 @@
 
 		&__wrapper {
 		}
-}
+    }
 
-.hotel-text {
+    .hotel-text {
 
-		// .hotel-text__wrapper
+            // .hotel-text__title
 
-		&__wrapper {
-		}
+            &__title {
+                margin-top: 13px;
+            }
 
-		// .hotel-text__title
+    }
+    .stars {
+        margin-right: 17px;
+    }
 
-		&__title {
-            margin-top: 13px;
-		}
-
-		// .hotel-text__offer
-
-		&__offer {
-		}
-
-		// .hotel-text__description
-
-		&__description {
-		}
-}
-.stars {
-    margin-right: 17px;
-}
-.hotel-ratting {
-
-		// .hotel-ratting__caption
-
-		&__caption {
-		}
-
-		// .hotel-ratting__value
-
-		&__value {
-		}
-}
 
 }
