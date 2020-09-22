@@ -12,3 +12,18 @@ let mySwiper = new Swiper('.swiper-container', {
 })
 
 
+// Яндекс карты
+
+ymaps.ready(init);
+function init(){ 
+    // Создание карты.    
+    var myMap = new ymaps.Map("map", {
+        
+        center: [7.838539, 98.298839],
+       
+        zoom: 16
+    });
+
+    
+}
+
