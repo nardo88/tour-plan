@@ -41,3 +41,6 @@ const sliderReview = new Swiper('.slider-reviews', {
 
 })
 
+// паралакс эффект
+
+let rellax = new Rellax('.newsletter__bg');
