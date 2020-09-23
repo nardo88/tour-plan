@@ -27,3 +27,17 @@ function init(){
     
 }
 
+// слайдер с отзывами
+
+const sliderReview = new Swiper('.slider-reviews', {
+    loop: true,
+    slideClass: 'item-slder-review',
+    wrapperClass: 'slider-reviews__wrapper',
+    navigation: {
+        nextEl: '.slider-reviews__btn-next',
+        prevEl: '.slider-reviews__btn-prev',
+        
+      },
+
+})
+

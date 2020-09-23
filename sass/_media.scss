@@ -76,9 +76,54 @@
     }
     .newsletter__wrapper{
         max-width: 700px;
-        padding: 71px 0 82px;
+        padding: 71px 0 74px;
 
     }
+
+    .reviews {
+        padding: 15px 0 70px;
+		// .reviews__title
+
+		&__title {
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 49px;
+		}
+    }
+
+    .slider-reviews {
+        max-width: 100%;
+
+		// .slider-reviews__btn-prev
+
+		&__btn-prev {
+            top: 57%;
+            left: 0;
+		}
+
+		// .slider-reviews__btn-next
+
+		&__btn-next {
+            top: 57%;
+            right: 0;
+		}
+    }
+    
+    .item-slder-review {
+
+		// .item-slder-review__stars
+
+		&__stars {
+            margin-bottom: 20px;
+		}
+
+		// .item-slder-review__text
+
+		&__text {
+            max-width: 452px;
+		}
+    }
+
 
 
 }
@@ -181,7 +226,7 @@
         align-items: flex-start;
         max-width: 576px;
         width: 92%;
-        padding: 58px 0 75px;
+        padding: 58px 0 82px;
     }
 
     .form-newsletter__input{
@@ -192,10 +237,46 @@
         width: 100%;
     }
 
+    .reviews {
+
+		// .reviews__title
+
+		&__title {
+            font-size: 18px;
+            line-height: 23px;
+            margin-top: 25px;
+            margin-bottom: 43px;
+		}
+
+    }
+
+    .slider-reviews {
+
+		// .slider-reviews__btn-prev
+
+		&__btn-prev {
+            top: 145px;
+            left: 33px;
+		}
+
+		// .slider-reviews__btn-next
+
+		&__btn-next {
+            top: 145px;
+            right: 33px;
+		}
+    }
+    .item-slder-review {
+
+		&__text {
+            padding: 0 20px;
+		}
+    }
 
 }
 
 @media (max-width: 320px){
+
     .container{
         max-width: 280px;
     }
@@ -222,11 +303,11 @@
 
     .hotel-text {
 
-            // .hotel-text__title
+        // .hotel-text__title
 
-            &__title {
-                margin-top: 13px;
-            }
+        &__title {
+            margin-top: 13px;
+        }
 
     }
     .stars {
@@ -244,6 +325,7 @@
     .slider-hotel__btn-prev{
         left: 5px;
     }
+
     .slider-hotel__btn{
         width: 12px;
         height: 12px;
@@ -257,15 +339,18 @@
         height: 172px;
 
     }
+
     .maps{
         height: 172px;
 
     }
+
     .newsletter__wrapper{
         max-width: 280px;
     }
 
     .newsletter{
+
         &__title{
             font-size: 20px;
             line-height: 28px;
@@ -282,6 +367,18 @@
         &__input{
             padding-left: 16px;
         }
+    }
+
+    .reviews {
+        max-width: 245px;
+    }
+    
+    .item-slder-review {
+
+		&__text {
+            max-width: 219px;
+            padding: 0;
+		}
     }
 
 }
