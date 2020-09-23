@@ -904,7 +904,7 @@ template {
   height: 213px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  background: #000;
+  overflow: hidden;
 }
 
 .newsletter {
@@ -1065,7 +1065,6 @@ template {
 .slider-reviews {
   overflow: hidden;
   max-width: 731px;
-  min-height: 325px;
   padding-top: 45px;
 }
 
@@ -1122,11 +1121,30 @@ template {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 280px;
   width: 731px;
   position: relative;
   padding: 54px 0 30px;
   background: #fff;
+}
+
+.item-slder-review:after {
+  content: '';
+  background: url(../images/quote-left.svg);
+  width: 70px;
+  height: 47px;
+  position: absolute;
+  top: 12px;
+  left: 64px;
+}
+
+.item-slder-review:before {
+  content: '';
+  width: 70px;
+  height: 47px;
+  position: absolute;
+  background: url(../images/quote-right.svg);
+  top: 119px;
+  right: 60px;
 }
 
 .item-slder-review__img {
@@ -1174,7 +1192,6 @@ template {
 
 .item-slder-review__text {
   max-width: 537px;
-  min-height: 114px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1277,6 +1294,12 @@ template {
   .slider-reviews__btn-next {
     top: 57%;
     right: 0;
+  }
+  .item-slder-review:before {
+    display: none;
+  }
+  .item-slder-review:after {
+    display: none;
   }
   .item-slder-review__stars {
     margin-bottom: 20px;
@@ -1403,15 +1426,29 @@ template {
     margin-bottom: 43px;
   }
   .slider-reviews__btn-prev {
-    top: 145px;
+    top: 122px;
     left: 33px;
   }
   .slider-reviews__btn-next {
-    top: 145px;
+    top: 122px;
     right: 33px;
   }
   .item-slder-review__text {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .reviews__title {
+    max-width: 245px;
+  }
+  .slider-reviews__btn-prev {
+    top: 143px;
+    left: 33px;
+  }
+  .slider-reviews__btn-next {
+    top: 143px;
+    right: 33px;
   }
 }
 
@@ -1438,7 +1475,7 @@ template {
     padding-bottom: 26px;
   }
   .slider-hotel__btn-next {
-    right: 5px;
+    right: 9px;
   }
   .slider-hotel__btn-prev {
     left: 5px;
@@ -1446,6 +1483,9 @@ template {
   .slider-hotel__btn {
     width: 12px;
     height: 12px;
+    -webkit-background-size: 4px 4px;
+            background-size: 4px;
+    top: 52%;
   }
   .booking {
     padding: 30px 23px 25px;

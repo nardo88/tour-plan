@@ -14,18 +14,18 @@ let mySwiper = new Swiper('.swiper-container', {
 
 // Яндекс карты
 
-ymaps.ready(init);
-function init(){ 
-    // Создание карты.    
-    var myMap = new ymaps.Map("map", {
+// ymaps.ready(init);
+// function init(){ 
+//     // Создание карты.    
+//     var myMap = new ymaps.Map("map", {
         
-        center: [7.838539, 98.298839],
+//         center: [7.838539, 98.298839],
        
-        zoom: 16
-    });
+//         zoom: 16
+//     });
 
     
-}
+// }
 
 // слайдер с отзывами
 
@@ -38,6 +38,7 @@ const sliderReview = new Swiper('.slider-reviews', {
         prevEl: '.slider-reviews__btn-prev',
         
       },
+    autoHeight: true,
 
 })
 

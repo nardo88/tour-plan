@@ -29,7 +29,6 @@
 .slider-reviews {
     overflow: hidden;
     max-width: 731px;
-    min-height: 325px;
     padding-top: 45px;
 
     // .slider-reviews__wrapper
@@ -80,13 +79,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 280px;
     width: 731px;
     position: relative;
     padding: 54px 0 30px;
     background: $ligth;
-    // .item-slder-review__img
+    &:after{
+        content: '';
+        background: url(../images/quote-left.svg);
+        width: 70px;
+        height: 47px;
+        position: absolute;
+        top: 12px;
+        left: 64px;
+    }
+    &:before{
+        content: '';
+        width: 70px;
+        height: 47px;
+        position: absolute;
+        background: url(../images/quote-right.svg);
+        top: 119px;
+        right: 60px;
+    }
 
+
+    // .item-slder-review__img
     &__img {
         position: absolute;
         top: 0;
@@ -133,7 +150,6 @@
 
     &__text {
         max-width: 537px;
-        min-height: 114px;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;

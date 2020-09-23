@@ -108,8 +108,14 @@
             right: 0;
 		}
     }
-    
     .item-slder-review {
+
+        &:before{
+            display: none;
+        }
+        &:after{
+            display: none;
+        }
 
 		// .item-slder-review__stars
 
@@ -255,14 +261,14 @@
 		// .slider-reviews__btn-prev
 
 		&__btn-prev {
-            top: 145px;
+            top: 122px;
             left: 33px;
 		}
 
 		// .slider-reviews__btn-next
 
 		&__btn-next {
-            top: 145px;
+            top: 122px;
             right: 33px;
 		}
     }
@@ -274,6 +280,35 @@
     }
 
 }
+
+
+@media (max-width: 440px){
+    .reviews {
+        &__title{
+            max-width: 245px;
+
+        }
+    }
+
+    .slider-reviews {
+
+		// .slider-reviews__btn-prev
+
+		&__btn-prev {
+            top: 143px;
+            left: 33px;
+		}
+
+		// .slider-reviews__btn-next
+
+		&__btn-next {
+            top: 143px;
+            right: 33px;
+		}
+    }
+
+}
+
 
 @media (max-width: 320px){
 
@@ -319,7 +354,7 @@
     }
 
     .slider-hotel__btn-next{
-        right: 5px;
+        right: 9px;
     }
 
     .slider-hotel__btn-prev{
@@ -329,6 +364,8 @@
     .slider-hotel__btn{
         width: 12px;
         height: 12px;
+        background-size: 4px;
+        top: 52%;
     }
 
     .booking{
