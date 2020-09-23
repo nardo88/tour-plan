@@ -1,5 +1,11 @@
-let mySwiper = new Swiper('.swiper-container', {
+
+
+
+
+let mySwiper = new Swiper('.slider-hotel__container', {
     loop: true,
+    slideClass: 'slider-hotel__slide',
+    wrapperClass: 'slider-hotel__wrapper',
 
     navigation: {
         nextEl: '.slider-hotel__btn-next',
@@ -11,34 +17,19 @@ let mySwiper = new Swiper('.swiper-container', {
     }
 })
 
-
-// Яндекс карты
-
-// ymaps.ready(init);
-// function init(){ 
-//     // Создание карты.    
-//     var myMap = new ymaps.Map("map", {
-        
-//         center: [7.838539, 98.298839],
-       
-//         zoom: 16
-//     });
-
-    
-// }
-
 // слайдер с отзывами
 
 const sliderReview = new Swiper('.slider-reviews', {
     loop: true,
-    slideClass: 'item-slder-review',
-    wrapperClass: 'slider-reviews__wrapper',
+    autoHeight: true,
+    centeredSlides: true,
+    
     navigation: {
-        nextEl: '.slider-reviews__btn-next',
-        prevEl: '.slider-reviews__btn-prev',
+        nextEl: '.reviews__btn-next',
+        prevEl: '.reviews__btn-prev',
         
       },
-    autoHeight: true,
+    
 
 })
 
