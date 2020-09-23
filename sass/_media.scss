@@ -370,13 +370,17 @@
     }
 
     .reviews {
-        max-width: 245px;
+        &__title{
+            max-width: 245px;
+
+        }
     }
     
     .item-slder-review {
 
 		&__text {
-            max-width: 219px;
+            max-width: 217px;
+            text-align: left;
             padding: 0;
 		}
     }

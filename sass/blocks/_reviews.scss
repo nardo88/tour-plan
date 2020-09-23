@@ -1,5 +1,5 @@
 .reviews {
-    padding: 40px 0 70px;
+    padding: 10px 0 70px;
     background: #F5FAFE;
 
     // .reviews__wrapper
@@ -55,7 +55,7 @@
         border: none;
         background: url(../../images/review-slider-prev.svg) center no-repeat;
         position: absolute;
-        top: 56%;
+        top: 58%;
         left: 18px;
         cursor: pointer;
 
@@ -70,7 +70,7 @@
         border: none;
         background: url(../../images/review-slider-next.svg) center no-repeat;
         position: absolute;
-        top: 56%;
+        top: 58%;
         right: 18px;
         cursor: pointer;
 
@@ -126,7 +126,7 @@
 
     &__stars{
         line-height: 0.2;
-        margin-bottom: 33px;
+        margin-bottom: 20px;
     }
 
     // .item-slder-review__text
