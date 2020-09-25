@@ -1,0 +1,341 @@
+
+.packages {
+    padding: 10px 0 70px;
+    background: #F5FAFE;
+
+    // .packages__title
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 65px;
+    }
+
+    // .packages__grid
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 500px);
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    // .packages__grid-item
+
+    &__grid-item {
+        border-radius: 8px;
+        overflow: hidden;
+        
+
+        &:nth-child(1){
+            grid-column: span 2;
+        }
+
+    }
+}
+
+.main-card {
+    display: flex;
+
+    &__image{
+        width: 50%;
+        position: relative;
+        &:before{
+            content: 'Flash Offer';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #FFFFFF;
+            background: #EC1F46;
+            border-radius: 0px 4px 4px 0px;
+            padding: 7px 12px;
+            position: absolute;
+            top: 26px;
+            left: 0;
+            min-width: 73px
+
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .main-card__column
+
+    &__content {
+        width: 50%;
+        background: #0A223D;
+        color: $ligth;
+        padding: 44px 21px 30px 47px;
+    }
+
+    // .main-card__stars
+
+    &__stars {
+        line-height: .2;
+    }
+
+    // .main-card__title
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: 6px;
+        margin-bottom: 0;
+
+    }
+
+    // .main-card__description
+
+    &__description {
+        font-size: 14px;
+        line-height: 160.6%;
+        margin-bottom: 44px;
+        margin-top: 28px;
+    }
+
+    // .main-card__room
+
+    &__room {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .main-card__group
+
+    &__group {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 10px;
+        &:nth-child(3){
+            margin-bottom: 0;
+            
+        }
+
+    }
+
+    // .main-card__footer
+
+    &__footer {
+        margin-top: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-end;
+        align-items: flex-end;
+        position: relative;
+    }
+
+    // .main-card__price
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    // .main-card__oldprice
+
+    &__oldprice {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration-line: line-through;
+        margin-bottom: 5px;
+    }
+
+    // .main-card__newprice
+
+    &__newprice {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    // .main-card__button
+
+    &__button {
+        min-width: 120px;
+        padding: 10px;
+        background: #EC1F46;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        // font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: $ligth;
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+    }
+}
+
+
+.package-card {
+    display: flex;
+    flex-direction: column;
+
+    // .package-card__image
+
+    &__image {
+        height: 50%;
+        position: relative;
+
+        &:before{
+            content: 'Flash Offer';
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 10px;
+            color: #FFFFFF;
+            background: #EC1F46;
+            border-radius: 0px 4px 4px 0px;
+            padding: 4px 10px;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            min-width: 35px
+
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .package-card__content
+
+    &__content {
+        height: 50%;
+        background: #0A223D;
+        color: $ligth;
+        padding: 30px 21px 25px 32px;
+    }
+
+    // .package-card__title
+
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0;
+        line-height: 23px;
+        margin-bottom: 23px;
+    }
+
+    // .package-card__room
+
+    &__room {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .package-card__group
+
+    &__group {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 9px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    // .package-card__footer
+
+    &__footer {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    // .package-card__price
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .package-card__oldprice
+
+    &__oldprice {
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration-line: line-through;
+        margin-bottom: 5px;
+    }
+
+    // .package-card__newprice
+
+    &__newprice {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    // .package-card__button
+
+    &__button {
+        min-width: 120px;
+        padding: 10px;
+        background: #EC1F46;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        // font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: $ligth;
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+    }
+}
+
+.room-map{
+    &:before{
+        vertical-align: middle;
+        content: '';
+        background: url(../images/grid/map.svg);
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+
+.room-user{
+    &:before{
+        vertical-align: middle;
+        content: '';
+        background: url(../images/grid/user.svg);
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+
+.room-home{
+    &:before{
+        vertical-align: middle;
+        content: '';
+        background: url(../images/grid/home.svg);
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
