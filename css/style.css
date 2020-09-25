@@ -1793,6 +1793,10 @@ template {
     height: 255px;
     margin-bottom: 20px;
   }
+  .packages__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .packages__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -1940,6 +1944,10 @@ template {
   }
   .activities {
     padding: 40px 0 60px 0;
+  }
+  .packages__title {
+    font-size: 18px;
+    line-height: 23px;
   }
   .packages__grid {
     display: -ms-grid;

@@ -151,6 +151,10 @@
 
     .packages {
        
+        &__title{
+            font-size: 30px;
+            line-height: 38px;
+        }
     
         // .packages__grid
     
@@ -324,6 +328,11 @@
     }
 
     .packages {
+
+        &__title{
+            font-size: 18px;
+            line-height: 23px;
+        }
         // .packages__grid
     
         &__grid {
