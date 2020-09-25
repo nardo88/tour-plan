@@ -84,6 +84,9 @@
 
     }
 
+    .newsletter__bg{
+        bottom: 100%;
+    }
     .reviews {
         padding: 15px 0 70px;
 		// .reviews__title
@@ -170,6 +173,14 @@
 
 
 
+}
+@media (max-width: 750px){
+    .packages{
+        &__grid{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
 }
 
 
@@ -340,6 +351,8 @@
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(5, 500px);
             row-gap: 30px;
+            margin-left: 0;
+            margin-right: 0;
         }
     
         // .packages__grid-item

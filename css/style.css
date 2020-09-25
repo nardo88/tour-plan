@@ -1749,6 +1749,9 @@ template {
     max-width: 700px;
     padding: 71px 0 74px;
   }
+  .newsletter__bg {
+    bottom: 100%;
+  }
   .reviews {
     padding: 15px 0 70px;
   }
@@ -1806,6 +1809,13 @@ template {
        -moz-column-gap: 30px;
             column-gap: 30px;
     row-gap: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .packages__grid {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -1957,6 +1967,8 @@ template {
     -ms-grid-rows: (500px)[5];
         grid-template-rows: repeat(5, 500px);
     row-gap: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .packages__grid-item:nth-child(1) {
     grid-column: span 1;
