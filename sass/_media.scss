@@ -186,7 +186,9 @@
             grid-row: 1 / 2;
             grid-column: 1 / 2;
             width: 100px;
-            height: 120px;
+            height: 110px;
+            margin-bottom: 10px;
+            object-fit: contain;
 
         }
         &__social-network {
@@ -632,6 +634,11 @@
         &__logo{
             grid-row: 1;
             grid-column: 1;
+            width: 100px;
+            margin-top: 9px;
+            margin-bottom: 0;
+            height: 109px;
+            object-fit: contain;
         }
         &__social-network{
             grid-row: 2;
@@ -668,7 +675,7 @@
         &__rights {
             flex-direction: column;
             align-items: flex-start;
-            margin-top: 28px;
+            margin-top: 32px;
             &-image{
                 margin-top: 10px;
             }
@@ -714,13 +721,15 @@
             margin-top: 4px;
             margin-left: 0px;
         }
+        &__title--inline{
+            margin-left: 0;
+        }
         &__rights-image {
         }
         &__rights {
-            margin-top: 27px;
             grid-template-columns: 1fr;
             &-image{
-                margin: 18px 0 0;
+                margin: 12px 0 0;
             }
         }
     }
