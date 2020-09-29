@@ -35,12 +35,18 @@
     &-bottom{
         background: $dark;
     }
+    &__user{
+        &_mobile_visible{
+            display: none;
+        }
+    }
 }
+
+
 .logo{
     width: 177px;
     
 }
-
 .search{
     display: flex;
     position: relative;
@@ -88,5 +94,18 @@
         line-height: 18px;
         color: $text-color;
         margin-left: 18px;
+    }
+}
+
+.navbar{
+    &__user{
+        &_mobile_visible{
+            display: none;
+        }
+    }
+    &__search{
+        &_mobile_visible{
+            display: none;
+        }
     }
 }

@@ -36,3 +36,14 @@ const sliderReview = new Swiper('.slider-reviews', {
 // паралакс эффект
 
 let rellax = new Rellax('.newsletter__bg');
+
+// мобиольное меню
+
+const menuButton = document.querySelector('.menu-button'),
+    navbarBottom = document.querySelector('.navbar-bottom');
+
+
+menuButton.addEventListener('click', () => {
+    console.log('click');
+    navbarBottom.classList.toggle('navbar-bottom_mobile_visible')
+})

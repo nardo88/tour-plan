@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbar navbar_mobile_fixed">
         <div class="container">
             <div class="navbar-top">
                 <a href="#" class="logo">
@@ -34,7 +34,17 @@
             </div> 
         </div>
         <div class="navbar-bottom">
-            <div class="container">
+            <div class="container container_mobile_top">
+                <a href="#" class="user navbar__user navbar__user_mobile_visible">
+                    <img src="images/avatar.jpg" alt="avatar: Nathan" class="user__avatar">
+                    <span class="user__name">Nathan</span>
+                </a>
+                <form action="#" class="search navbar__search navbar__search_mobile_visible">
+                    <input type="search" class="search__input" placeholder="Search Location">
+                    <button class="search__button">
+                        <img src="images/search-button.svg" alt="Icon: search">
+                    </button>
+                </form>
                 <ul class="navbar-menu">
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
                     <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>

@@ -282,13 +282,98 @@
     .container{
         max-width: 576px;
         width: 92%;
+        &_mobile_top{
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    body{
+        padding-top: 69px;
     }
     .navbar{
-        &-menu, &__search, &__user{
+
+        &_mobile_fixed{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            height: 72px;
+        }
+        &-bottom{
             display: none;
+
+            &_mobile_visible{
+                display: flex;
+                justify-content: flex-start;
+                position: fixed;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 71px;
+                padding-top: 31px;
+
+                
+            }
+
+        }
+        &__search, &__user{
+            display: none;
+            &_mobile_visible{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__user{
+            &_mobile_visible{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 26px;
+
+                span{
+                    color: $ligth;
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+            }
+        }
+        &__search{
+            &_mobile_visible{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 0;
+                margin-bottom: 17px;
+                margin-right: 0;
+                width: 89%;
+
+
+                .search__input{
+                    width: 100%;
+                    margin-left: 8px;
+                    border-radius: 5px; 
+                }
+            }
+            
+        }
+
+        
+        &-menu{
+            flex-direction: column;
+            &__item{
+                margin-bottom: 17px;
+            }
+            
+
         }
         
-        
+    }
+    .search{
+        &__button{
+            width: 68px;
+        }
     }
     .menu{
         &-button{
