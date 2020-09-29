@@ -316,6 +316,7 @@
                 bottom: 0;
                 top: 71px;
                 padding-top: 31px;
+                overflow-y: auto;
 
                 
             }
@@ -440,6 +441,9 @@
         margin-top: 20px;
         width: 100%;
         margin-bottom: 40px;
+        iframe{
+            width: 100%;
+        }
     }
 
     .maps{

@@ -2310,6 +2310,7 @@ template {
     bottom: 0;
     top: 71px;
     padding-top: 31px;
+    overflow-y: auto;
   }
   .navbar__search, .navbar__user {
     display: none;
@@ -2449,6 +2450,9 @@ template {
     margin-top: 20px;
     width: 100%;
     margin-bottom: 40px;
+  }
+  .map iframe {
+    width: 100%;
   }
   .maps {
     width: 100%;
