@@ -44,6 +44,5 @@ const menuButton = document.querySelector('.menu-button'),
 
 
 menuButton.addEventListener('click', () => {
-    console.log('click');
     navbarBottom.classList.toggle('navbar-bottom_mobile_visible')
 })
