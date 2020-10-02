@@ -2206,6 +2206,77 @@ template {
   display: block;
 }
 
+@media (max-height: 540px) {
+  .modal__dialog {
+    top: 47%;
+    padding: 10px 20px 10px;
+    min-height: 80vh;
+  }
+  .modal__input {
+    height: 50px;
+  }
+  .modal__message {
+    min-height: 75px;
+  }
+  .modal__button {
+    padding: 10px;
+    min-height: 40px;
+  }
+}
+
+@media (max-height: 400px) {
+  .modal__dialog {
+    padding: 10px 20px 10px;
+    min-height: 80vh;
+  }
+  .modal__input {
+    height: 35px;
+  }
+  .modal__message {
+    min-height: 65px;
+  }
+  .modal__button {
+    padding: 10px;
+    min-height: 40px;
+  }
+}
+
+@media (max-height: 375px) {
+  .modal__dialog {
+    top: 47%;
+    padding: 10px 20px 10px;
+    min-height: 80vh;
+  }
+  .modal__input {
+    height: 35px;
+  }
+  .modal__message {
+    min-height: 65px;
+  }
+  .modal__button {
+    padding: 10px;
+    min-height: 40px;
+  }
+}
+
+@media (max-height: 350px) {
+  .modal__dialog {
+    top: 47%;
+    padding: 5px 20px 10px;
+    min-height: 80vh;
+  }
+  .modal__input {
+    height: 25px;
+  }
+  .modal__message {
+    min-height: 55px;
+    margin-bottom: 10px;
+  }
+  .modal__button {
+    padding: 10px;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

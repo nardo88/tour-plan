@@ -51,7 +51,10 @@ window.onload = () => {
     const bookingButton = document.querySelector('.booking__button'),
         modalOverlay = document.querySelector('.modal__overlay'),
         modalClose = document.querySelector('.modal__close'),
-        modalDialog = document.querySelector('.modal__dialog');
+        modalDialog = document.querySelector('.modal__dialog'),
+        mainCardButton = document.querySelector('.main-card__button'),
+        packageCardButton = document.querySelectorAll('.package-card__button'),
+        cardButton = document.querySelectorAll('.card__button');
 
     const closeModal = () => {
         modalOverlay.classList.remove('modal__overlay--open')
@@ -60,10 +63,25 @@ window.onload = () => {
 
     }
 
-    bookingButton.addEventListener('click', () => {
+    const openModal = () => {
         document.body.style.overflow = 'hidden'
         modalOverlay.classList.add('modal__overlay--open')
         modalDialog.classList.add('modal__dialog--open')
+
+    }
+
+    mainCardButton.addEventListener('click', openModal)
+
+    bookingButton.addEventListener('click', () => {
+        openModal()
+        
+    })
+
+    packageCardButton.forEach(item => {
+        item.addEventListener('click', openModal)
+    })
+    cardButton.forEach(item => {
+        item.addEventListener('click', openModal)
     })
 
     modalClose.addEventListener('click', (e) => {

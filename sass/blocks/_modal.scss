@@ -149,3 +149,95 @@
         
     }
 }
+
+@media (max-height: 540px){
+    .modal{
+        &__dialog{
+            top: 47%;
+            padding: 10px 20px 10px;
+            min-height: 80vh;
+
+        }
+
+        &__input{
+            height: 50px;
+        }
+        &__message{
+            min-height: 75px;
+        }
+        &__button{
+            padding: 10px;
+            min-height: 40px;
+        }
+    }
+
+}
+
+@media (max-height: 400px){
+    .modal{
+        &__dialog{
+            padding: 10px 20px 10px;
+            min-height: 80vh;
+
+        }
+
+        &__input{
+            height: 35px;
+        }
+        &__message{
+            min-height: 65px;
+        }
+        &__button{
+            padding: 10px;
+            min-height: 40px;
+        }
+    }
+
+}
+
+@media (max-height: 375px){
+    .modal{
+        &__dialog{
+            top: 47%;
+            padding: 10px 20px 10px;
+            min-height: 80vh;
+
+        }
+
+        &__input{
+            height: 35px;
+        }
+        &__message{
+            min-height: 65px;
+        }
+        &__button{
+            padding: 10px;
+            min-height: 40px;
+        }
+    }
+
+}
+
+
+@media (max-height: 350px){
+    .modal{
+        &__dialog{
+            top: 47%;
+            padding: 5px 20px 10px;
+            min-height: 80vh;
+
+        }
+
+        &__input{
+            height: 25px;
+        }
+        &__message{
+            min-height: 55px;
+            margin-bottom: 10px;
+        }
+        &__button{
+            padding: 10px;
+        }
+    }
+
+}
