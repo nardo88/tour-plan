@@ -261,6 +261,8 @@
             margin: 0;
         }
 
+        
+
     }
 
 
@@ -738,6 +740,8 @@
         }
     }
 
+   
+
 }
 
 @media (max-width: 560px){
@@ -755,6 +759,15 @@
         }
         &:nth-child(4){
             order: 3;
+        }
+    }
+
+    .modal{
+        &__dialog{
+            max-width: 576px;
+            width: 92%;
+            padding: 26px 50px 30px;
+            
         }
     }
 }
@@ -793,6 +806,17 @@
             line-height: 23px;
             margin-bottom: 36px;
 
+        }
+    }
+
+    .modal{
+        &__button{
+            order: 2;
+        }
+
+        &__info{
+            width: 100%;
+            margin-bottom: 20px;
         }
     }
 
@@ -912,6 +936,13 @@
             text-align: left;
             padding: 0;
 		}
+    }
+
+    .modal{
+        &__dialog{
+            padding: 26px 20px 30px;
+            
+        }
     }
 
 }

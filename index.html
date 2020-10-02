@@ -12,7 +12,7 @@
     <header class="navbar navbar_mobile_fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="images/horizpntal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
                 <form action="#" class="search navbar__search">
@@ -302,8 +302,8 @@
                 subscribe to our
                 <span class="newsletter__subtitle">Newsletter</span>
             </h2>
-            <form action="#" class="newsletter__form form-newsletter">
-                <input type="search" class="form-newsletter__input" placeholder="Your email address">
+            <form action="send.php" method="POST" class="newsletter__form form-newsletter">
+                <input name="email" type="email" class="form-newsletter__input" placeholder="Your email address">
                 <button class="form-newsletter__button">Send</button>
             </form>
         </div>
@@ -485,10 +485,10 @@
 
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea class="footer__message" placeholder="Message"></textarea>
+                    <form name="contact" action="send.php" method="POST" class="footer__form">
+                        <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
+                        <input name="phone" type="tel" class="input footer__input" placeholder="Phone Number*">
+                        <textarea name="message" class="footer__message" placeholder="Message"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -513,6 +513,27 @@
         </div>
     </footer>
 
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="images/close-modal.svg" alt="close modal">
+            </a>
+            <div class="modal__contact-form">
+                <h3 class="modal__title modal__title--mb-3">Booking</h3>
+                <form name="modal" action="send.php" method="POST" class="modal__form">
+                    <input name="modal_name" type="text" class="input modal__input" placeholder="Your Full Name*">
+                    <input name="modal_phone" type="tel" class="input modal__input" placeholder="Phone Number*">
+                    <input name="modal_email" type="email" class="input modal__input" placeholder="Email*">
+                    <textarea name="modal_message" class="modal__message" placeholder="Message"></textarea>
+                    <button class="button modal__button" type="submit">Send</button>
+                    <span class="modal__info">* Required Fields</span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=189a8ee7-db62-4dda-bc2b-6ee7f12ac42c&lang=ru_RU"></script>
     <script src="js/rellax.min.js"></script>

@@ -6,7 +6,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;  
-        padding-bottom: 10px;      
+        padding-bottom: 10px;  
+          
     }
 
     &__slider{
@@ -32,6 +33,10 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        &--column{
+            align-items: flex-start;
+            flex-direction: column;
+        }  
     }
 
     // .hotel-text__title
@@ -61,6 +66,15 @@
         padding: 0px 8px;
         margin-top: 5px;
 
+    }
+
+    &__link{
+        background: $primary;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: $ligth;
+        border-radius: 5px;
+        margin-top: 10px;
     }
 
     // .hotel-text__description
