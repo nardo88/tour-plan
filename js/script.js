@@ -94,9 +94,52 @@ window.onload = () => {
             closeModal()
         }
     })
+
     
+    //  валидация формы
+    $('.modal__form').validate({
+        errorClass: "invalid",
+        messages: {
+            modal_name: {
+                required: "Please specify your name",
+                minLength: "Name must not be shorter than 2 characters"
+            },
+            modal_email: {
+              required: "We need your email address to contact you",
+              email: "Your email address must be in the format of name@domain.com"
+            },
+            modal_phone: {
+                required: "Please specify your phone number"
+            }
+        }
 
+    });
 
+    $('.footer__form').validate({
+        errorClass: "invalid",
+        messages: {
+            name: {
+                required: "Please specify your name",
+                minLength: "Name must not be shorter than 2 characters"
+            },
+            phone: {
+                required: "Please specify your phone number"
+            }
+        }
+
+    })
+
+    $('.newsletter__form').validate({
+        errorClass: "invalid",
+        messages: {
+            email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com"
+            }
+        }
+    })
+
+    $('.phone').mask('+7(000) 000-0000');
 }
 
 

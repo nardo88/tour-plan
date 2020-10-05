@@ -148,6 +148,7 @@
         flex-wrap: wrap;
     }
 
+    
     // .footer__input
 
     &__input {
@@ -156,14 +157,19 @@
         border: none;
         padding: 0 23px;
         height: 50px;
-        margin-bottom: 15px;
-        flex-basis: 47%;
+        width: 100%;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 15px;
         &::placeholder{
             color: #BDBDBD;
+        }
+
+        &-wrapper{
+            margin-bottom: 15px;
+            flex-basis: 47%;
+
         }
     }
 
@@ -174,9 +180,8 @@
         background: #fff;
         border-radius: 4px;
         padding: 18px 23px;
+        width: 100%;
         border: none;
-        flex-basis: 100%;
-        margin-bottom: 23px;   
         width: 100%;
         height: 123px; 
         font-style: normal;
@@ -185,6 +190,13 @@
         line-height: 15px;
         &::placeholder{
             color: #BDBDBD;
+        }
+
+        &-wrapper{
+            flex-basis: 100%;
+            margin-bottom: 23px;   
+
+            
         }
     }
 

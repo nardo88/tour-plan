@@ -67,7 +67,7 @@
     height: 55px;
     position: relative;
     border-radius: 4px;
-    overflow: hidden;
+    // overflow: hidden;
     // .form-newsletter__input
 
     &__input {
@@ -83,6 +83,12 @@
         &::placeholder { 
             color: #BDBDBD !important; 
         } 
+
+        &-wrapper{
+            height: 100%;
+            width: 350px;
+            position: relative;
+        }
 
     }
 
@@ -103,6 +109,7 @@
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
+        border-radius: 0 4px 4px 0;
     }
 }
 

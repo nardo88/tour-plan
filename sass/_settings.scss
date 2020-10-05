@@ -20,3 +20,9 @@ img{
 
 input[type="search"]::placeholder {color: $text-color;} 
   
+
+
+.invalid{
+    color: $primary;
+    border-bottom: 1px solid $primary;
+}

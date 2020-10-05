@@ -303,7 +303,9 @@
                 <span class="newsletter__subtitle">Newsletter</span>
             </h2>
             <form action="send.php" method="POST" class="newsletter__form form-newsletter">
-                <input name="email" type="email" class="form-newsletter__input" placeholder="Your email address">
+                <div class="form-newsletter__input-wrapper">
+                    <input name="email" type="email" class="form-newsletter__input" placeholder="Your email address" required>
+                </div>
                 <button class="form-newsletter__button">Send</button>
             </form>
         </div>
@@ -486,9 +488,15 @@
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
                     <form name="contact" action="send.php" method="POST" class="footer__form">
-                        <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
-                        <input name="phone" type="tel" class="input footer__input" placeholder="Phone Number*">
-                        <textarea name="message" class="footer__message" placeholder="Message"></textarea>
+                        <div class="footer__input-wrapper">
+                            <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*" required minLength="2">
+                        </div>
+                        <div class="footer__input-wrapper">
+                            <input name="phone" type="tel" class="input footer__input phone" placeholder="Phone Number*" required>
+                        </div>
+                        <div class="footer__message-wrapper">
+                            <textarea name="message" class="footer__message" placeholder="Message" required></textarea>
+                        </div>
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -522,10 +530,10 @@
             <div class="modal__contact-form">
                 <h3 class="modal__title modal__title--mb-3">Booking</h3>
                 <form name="modal" action="send.php" method="POST" class="modal__form">
-                    <input name="modal_name" type="text" class="input modal__input" placeholder="Your Full Name*">
-                    <input name="modal_phone" type="tel" class="input modal__input" placeholder="Phone Number*">
-                    <input name="modal_email" type="email" class="input modal__input" placeholder="Email*">
-                    <textarea name="modal_message" class="modal__message" placeholder="Message"></textarea>
+                    <input name="modal_name" type="text" class="input modal__input" placeholder="Your Full Name*" required minLength="2">
+                    <input name="modal_phone" type="tel" class="input modal__input phone" placeholder="Phone Number*" required>
+                    <input name="modal_email" type="email" class="input modal__input" placeholder="Email*" required>
+                    <textarea name="modal_message" class="modal__message" placeholder="Message" required></textarea>
                     <button class="button modal__button" type="submit">Send</button>
                     <span class="modal__info">* Required Fields</span>
                 </form>
@@ -533,8 +541,10 @@
         </div>
     </div>
 
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=189a8ee7-db62-4dda-bc2b-6ee7f12ac42c&lang=ru_RU"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/script.js"></script>
 </body>

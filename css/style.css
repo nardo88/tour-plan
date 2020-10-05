@@ -40,6 +40,11 @@ input[type="search"]::placeholder {
   color: #333333;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1380,7 +1385,6 @@ template {
   position: relative;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  overflow: hidden;
 }
 
 .form-newsletter__input {
@@ -1415,6 +1419,12 @@ template {
   color: #BDBDBD !important;
 }
 
+.form-newsletter__input-wrapper {
+  height: 100%;
+  width: 350px;
+  position: relative;
+}
+
 .form-newsletter__button {
   position: absolute;
   right: 0;
@@ -1430,6 +1440,8 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  -webkit-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
 }
 
 .reviews {
@@ -1862,10 +1874,7 @@ template {
   border: none;
   padding: 0 23px;
   height: 50px;
-  margin-bottom: 15px;
-  -webkit-flex-basis: 47%;
-      -ms-flex-preferred-size: 47%;
-          flex-basis: 47%;
+  width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1892,17 +1901,21 @@ template {
   color: #BDBDBD;
 }
 
+.footer__input-wrapper {
+  margin-bottom: 15px;
+  -webkit-flex-basis: 47%;
+      -ms-flex-preferred-size: 47%;
+          flex-basis: 47%;
+}
+
 .footer__message {
   resize: none;
   background: #fff;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   padding: 18px 23px;
+  width: 100%;
   border: none;
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-  margin-bottom: 23px;
   width: 100%;
   height: 123px;
   font-style: normal;
@@ -1929,6 +1942,13 @@ template {
 
 .footer__message::placeholder {
   color: #BDBDBD;
+}
+
+.footer__message-wrapper {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  margin-bottom: 23px;
 }
 
 .footer__button {
@@ -2108,7 +2128,7 @@ template {
   border: none;
   padding: 0 23px;
   height: 50px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
@@ -2149,7 +2169,7 @@ template {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   width: 100%;
   min-height: 123px;
   font-style: normal;
@@ -2188,6 +2208,7 @@ template {
   line-height: 15px;
   color: #fff;
   background: #EC1F46;
+  margin-top: 15px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   cursor: pointer;
@@ -2288,7 +2309,7 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-wrapper {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
@@ -2487,7 +2508,7 @@ template {
     max-width: 100%;
     margin-bottom: 20px;
   }
-  .footer__input {
+  .footer__input-wrapper {
     -webkit-flex-basis: 47%;
         -ms-flex-preferred-size: 47%;
             flex-basis: 47%;
@@ -2764,6 +2785,9 @@ template {
   .form-newsletter__input {
     width: 100%;
   }
+  .form-newsletter__input-wrapper {
+    width: 100%;
+  }
   .form-newsletter {
     width: 100%;
   }
@@ -2867,7 +2891,7 @@ template {
   .footer {
     padding: 60px 0 46px;
   }
-  .footer__input {
+  .footer__input-wrapper {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
@@ -3038,6 +3062,9 @@ template {
     -webkit-order: 3;
         -ms-flex-order: 3;
             order: 3;
+  }
+  .invalid {
+    font-size: 12px;
   }
   .modal__dialog {
     max-width: 576px;
