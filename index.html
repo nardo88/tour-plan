@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan - Hotel Booking</title>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -408,7 +408,9 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="images/footer/footer-logo.svg" alt="vertical logo" class="footer__logo">
+                <a href="index.html" class="footer__logo">
+                    <img src="images/footer/footer-logo.svg" alt="vertical logo" class="footer__logo">
+                </a>
 
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title footer__title--mt-1">ALL CATEGORIES</h3>
@@ -480,7 +482,7 @@
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="images/footer/mail.svg" alt="icon mail">
                             </div>
-                            <span>cherly.lawson@example.com</span>
+                            <a class="footer__link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
@@ -492,7 +494,7 @@
                             <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*" required minLength="2">
                         </div>
                         <div class="footer__input-wrapper">
-                            <input name="phone" type="tel" class="input footer__input phone" placeholder="Phone Number*" required>
+                            <input name="phone" type="tel" class="input footer__input phone" placeholder="Phone Number*" required minLength="17">
                         </div>
                         <div class="footer__message-wrapper">
                             <textarea name="message" class="footer__message" placeholder="Message" required></textarea>
@@ -531,7 +533,7 @@
                 <h3 class="modal__title modal__title--mb-3">Booking</h3>
                 <form name="modal" action="send.php" method="POST" class="modal__form">
                     <input name="modal_name" type="text" class="input modal__input" placeholder="Your Full Name*" required minLength="2">
-                    <input name="modal_phone" type="tel" class="input modal__input phone" placeholder="Phone Number*" required>
+                    <input name="modal_phone" type="tel" class="input modal__input phone" placeholder="Phone Number*" required minLength="17">
                     <input name="modal_email" type="email" class="input modal__input" placeholder="Email*" required>
                     <textarea name="modal_message" class="modal__message" placeholder="Message" required></textarea>
                     <button class="button modal__button" type="submit">Send</button>

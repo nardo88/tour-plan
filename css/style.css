@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Mulish';
   color: #333333;
   background: #F5FAFE;
 }
@@ -1374,7 +1374,7 @@ template {
 
 .newsletter__subtitle {
   display: block;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
@@ -3016,7 +3016,10 @@ template {
     margin-top: 15px;
   }
   .footer__message {
-    margin-bottom: 15px;
+    margin-bottom: 0;
+  }
+  .footer__message-wrapper {
+    margin-bottom: 12px;
   }
   .footer__icon {
     margin-top: 4px;
@@ -3176,6 +3179,9 @@ template {
   }
   .modal__dialog {
     padding: 26px 20px 30px;
+  }
+  .package-card__button, .main-card__button {
+    min-width: 105px;
   }
 }
 /*# sourceMappingURL=style.css.map */

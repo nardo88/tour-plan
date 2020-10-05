@@ -724,7 +724,11 @@
             margin-top: 15px;
         }
         &__message{
-            margin-bottom: 15px;
+            margin-bottom: 0;
+
+            &-wrapper{
+                margin-bottom: 12px;
+            }
         }
         &__icon {
             margin-top: 4px;
@@ -949,6 +953,9 @@
             padding: 26px 20px 30px;
             
         }
+    }
+    .package-card__button, .main-card__button {
+        min-width: 105px;
     }
 
 }
