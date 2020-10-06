@@ -53,7 +53,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'kuznecovm489@gmail.com'; // Логин на почте
-    $mail->Password   = '***'; // Пароль на почте
+    $mail->Password   = '********'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('kuznecovm489@gmail.com', 'Максим Кузнецов'); // Адрес самой почты и имя отправителя

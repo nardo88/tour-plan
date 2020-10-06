@@ -3,6 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Best Tour Plan - Hotel Booking</title>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -95,7 +112,9 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="images/footer/footer-logo.svg" alt="vertical logo" class="footer__logo">
+                <a href="index.html" class="footer__logo">
+                    <img src="images/footer/footer-logo.svg" alt="vertical logo" class="footer__logo">
+                </a>
 
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title footer__title--mt-1">ALL CATEGORIES</h3>
@@ -126,11 +145,11 @@
                 <div class="footer__social-network">
                     <h3 class="footer__title footer__title--inline">Social Network</h3>
                     <div class="footer__social-links">
-                        <a href="#" class="footer__link"><img src="images/footer/fb.svg" alt="icon facebook" ></a>
-                        <a href="#" class="footer__link"><img src="images/footer/youtube.svg" alt="icon youtube" ></a>
-                        <a href="#" class="footer__link"><img src="images/footer/inst.svg" alt="icon instagram" ></a>
+                        <a href="#" class="footer__link"><img src="images/footer/fb.svg" alt="icon facebook"></a>
+                        <a href="#" class="footer__link"><img src="images/footer/youtube.svg" alt="icon youtube"></a>
+                        <a href="#" class="footer__link"><img src="images/footer/inst.svg" alt="icon instagram"></a>
                     </div>
-                    
+
                 </div>
 
                 <div class="footer__list footer__legal">
@@ -151,33 +170,46 @@
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="images/footer/map.svg" alt="icon map">
                             </div>
-                            <span>9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span></li>
+                            <span>9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
+                        </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="images/footer/call.svg" alt="icon call">
                             </div>
                             <div class="footer__text-wrapper">
-                                <span>Tel (business hours) : <a class="footer__link" href="tel:2691500">269 1500</a></span><br>
-                                <span>Tel (hotline) Monday - Saturday: <a class="footer__link" href="tel:52-56-61-38">52‑56‑61‑38</a> (08:00 am – 20:00 pm)</span><br>
-                                <span>Tel (hotline) Sunday: <a class="footer__link" href="tel:52-56-61-38">52‑56‑61‑38</a> (08:00 am – 14:00 pm)</span>
+                                <span>Tel (business hours) : <a class="footer__link" href="tel:2691500">269
+                                        1500</a></span><br>
+                                <span>Tel (hotline) Monday - Saturday: <a class="footer__link"
+                                        href="tel:52-56-61-38">52‑56‑61‑38</a> (08:00 am – 20:00 pm)</span><br>
+                                <span>Tel (hotline) Sunday: <a class="footer__link"
+                                        href="tel:52-56-61-38">52‑56‑61‑38</a> (08:00 am – 14:00 pm)</span>
                             </div>
-                            
+
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="images/footer/mail.svg" alt="icon mail">
                             </div>
-                            <span>cherly.lawson@example.com</span>
+                            <a class="footer__link"
+                                href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
-                        <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
-                        <input name="phone" type="tel" class="input footer__input" placeholder="Phone Number*">
-                        <textarea name="message" class="footer__message" placeholder="Message"></textarea>
+                    <form name="contact" action="send.php" method="POST" class="footer__form">
+                        <div class="footer__input-wrapper">
+                            <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*"
+                                required minLength="2">
+                        </div>
+                        <div class="footer__input-wrapper">
+                            <input name="phone" type="tel" class="input footer__input phone" placeholder="Phone Number*"
+                                required minLength="17">
+                        </div>
+                        <div class="footer__message-wrapper">
+                            <textarea name="message" class="footer__message" placeholder="Message" required></textarea>
+                        </div>
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -185,9 +217,9 @@
             </div>
             <div class="footer__rights">
                 <div class="footer__rights-text">
-                    <a href="#!" class="footer__link footer__link--mr10" >Disclaimer</a>
-                    <a href="#!" class="footer__link footer__link--mr10" >Conditions of use</a>
-                    <a href="#!" class="footer__link footer__link--mr10" >Cancellation policy</a>
+                    <a href="#!" class="footer__link footer__link--mr10">Disclaimer</a>
+                    <a href="#!" class="footer__link footer__link--mr10">Conditions of use</a>
+                    <a href="#!" class="footer__link footer__link--mr10">Cancellation policy</a>
                 </div>
                 <div class="footer__rights-image">
                     <a class="footer__rights-link" href="#!"><img src="images/footer/pay1.png" alt=""></a>
