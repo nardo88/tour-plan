@@ -188,6 +188,7 @@
             width: 100px;
             height: 110px;
             margin-bottom: 10px;
+            margin-top: -1px;
             object-fit: contain;
 
         }
@@ -220,14 +221,21 @@
         }
         &__message{
             max-width: 100%;
-            margin-bottom: 20px;
+           
+
+            &-wrapper{
+                margin-bottom: 20px;
+            }
         }
         &__input-wrapper{
             flex-basis: 47%;
         }
         &__rights {
-            margin-top: 62px;
+            margin-top: 56px;
             grid-template-columns: repeat(2, 1fr);
+            &-text{
+                line-height: 24px;
+            }
             &-image{
                 position: relative;
                 margin-left: auto;
@@ -237,11 +245,15 @@
             margin-top: 22px;
         }
         &__item--mb-2 {
-            margin-bottom: 20px;
+            margin-bottom: 17px;
         }
         &__title--mb-3 {
             margin-top: 0px;
             margin-bottom: 34px;
+        }
+        &__title--mt-5 {
+            margin-left: 0;
+            margin-top: 20px;    
         }
         &__form{
             width: 91%;
@@ -252,6 +264,14 @@
         &__icon{
             margin-top: 2px;
             margin-left: 8px;
+            &--mt-2{
+                margin-top: 3px;
+                margin-left: 3px;
+            }
+            &--mt-3{
+                margin-top: 9px;
+                margin-left: 6px;
+            }
         }
         &__icon-wrapper {
             min-width: 44px;
@@ -259,6 +279,19 @@
         &__rights-text {
             grid-column: 1;
             margin: 0;
+        }
+
+        &__text{
+            margin-left: 0;
+        }
+
+        &__link{
+            &--mt-1{
+                margin-top: 5px;
+            }
+        }
+        &__ul--ml1{
+            margin-left: 0;
         }
 
         
@@ -632,19 +665,20 @@
     }
 
     .footer{
-        padding: 60px 0 46px;
+        padding: 69px 0 46px;
         &__input-wrapper{
             flex-basis: 100%;
         }
 
         &-wrapper{
             grid-template-columns: 1fr;
+            grid-row-gap: 34px;
         }
         &__logo{
             grid-row: 1;
             grid-column: 1;
             width: 100px;
-            margin-top: 9px;
+            margin-top: 0;
             margin-bottom: 0;
             height: 109px;
             object-fit: contain;
@@ -657,7 +691,8 @@
             align-items: flex-start;
         }
         &__social-links{
-            margin-top: 22px;    
+            margin-top: 23px;
+            margin-left: 3px;   
         }
         &__additional{
             grid-row: 4;
@@ -690,9 +725,27 @@
             }
             
         }
-        &__title--mt-1{
-            margin-top: -11px;
+
+        &__title{
+            &--inline{
+                margin-top: 7px;
+                margin-left: 0;
+            }
+            &--mt-4{
+                margin-top: -7px;
+            }
+            &--mt-2{
+                margin-top: -3px;
+            }
+            &--mt-1{
+                margin-top: -5px;
+            }
+            &--mt-5{
+                margin-top: 7px;
+                margin-bottom: 28px;
+            }
         }
+       
 
         &__title--mt-10 {
             margin-top: 4px;
@@ -706,10 +759,11 @@
             line-height: 19px;
         }
         &__item--mb-2 {
-            margin-bottom: 22px;
+            margin-bottom: 21px;
+            
         }
         &__title--mb-3 {
-            margin-top: -3px;
+            margin-top: 2px;
             margin-bottom: 16px;
         }
         &__form{
@@ -718,6 +772,7 @@
 
         &__info{
             width: 100%;
+            font-size: 11px;
         }
         &__button{
             order: 2;
@@ -731,18 +786,30 @@
             }
         }
         &__icon {
-            margin-top: 4px;
-            margin-left: 0px;
+            margin-top: 2px;
+            margin-left: 5px;
+            &--mt-2{
+                margin-top: 2px;
+                margin-left: 0px;
+            }
+            &--mt-3{
+                margin-top: 5px;
+                margin-left: 3px;
+            }
         }
-        &__title--inline{
-            margin-left: 0;
-        }
+      
         &__rights-image {
         }
         &__rights {
             grid-template-columns: 1fr;
+            margin-top: 24px;
             &-image{
-                margin: 12px 0 0;
+                margin: 8px 0 0;
+            }
+        }
+        &__link{
+            &--mt-1{
+                margin-top: 1px;
             }
         }
     }

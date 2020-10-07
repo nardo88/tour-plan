@@ -26,3 +26,38 @@ input[type="search"]::placeholder {color: $text-color;}
     color: $primary;
     border-bottom: 1px solid $primary;
 }
+
+@media(hover: hover) and (pointer: fine){
+    .booking__button{
+        background: #EC1F46;
+        &:hover{
+            background: #b11632;
+
+        }
+    }
+
+    .main-card__button{
+        background: #EC1F46;
+        &:hover{
+            background: #b11632;
+
+        }
+
+    }
+
+    .package-card__button{
+        background: #EC1F46;
+        &:hover{
+            background: #b11632;
+
+        }
+    }
+
+    .form-newsletter__button, .search__button, .card__button, .footer__button{
+        background: #EC1F46;
+        &:hover{
+            background: #b11632;
+
+        }
+    }
+}
